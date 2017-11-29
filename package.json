@@ -1,6 +1,6 @@
 {
   "name": "canvas-multiline-text",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Draws a text in a rectangle on a canvas, on multiple lines",
   "main": "index.js",
   "repository": {
