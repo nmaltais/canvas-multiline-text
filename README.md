@@ -2,7 +2,7 @@
 
 Draws a text in a rectangle on a canvas, on multiple lines.
 
-It was conceived to be used on Node.js with Automattic's implementation of Canvas `[node-canvas]`(https://github.com/Automattic/node-canvas), but it should work in browsers too.
+It was conceived to be used on Node.js with Automattic's implementation of Canvas [`node-canvas`](https://github.com/Automattic/node-canvas), but it should work in browsers too.
 
 Initialy developed for [ISBOBackend](https://gitlab.com/davideblasutto/ISBOBackend/).
 
@@ -52,4 +52,4 @@ The whole `options` parameter (well) if optional.
  * `logFunction` - Custom function for logging, with signature `logFunction(message)`. Default is `console.log`.
 
 ## Dependencies
-This module require some kind of Canvas object, so in Node.js you'll need to have `[node-canvas]`(https://github.com/Automattic/node-canvas) installed, even if it's not in this modul's dependencies list.
+This module require some kind of Canvas object, so in Node.js you'll need to have [`node-canvas`](https://github.com/Automattic/node-canvas) installed, even if it's not in this modul's dependencies list.
