@@ -16,6 +16,7 @@ drawMultilineText(text, context, options)
 ```javascript
 const canvas = new Canvas(500, 300)
 const drawMultilineText = require('canvas-multiline-text')
+
 const fontSizeUsed = drawMultilineText(
 	canvas.getContext('2d'),
 	"Please could you stop the noise, I'm trying to get some rest from all the unborn chicken voices in my head. What's that? What's that?",
@@ -32,9 +33,18 @@ const fontSizeUsed = drawMultilineText(
 		minFontSize: 15,
 		maxFontSize: 120
 )
+
 console.log('Text drawn with font size: ', fontSizeUsed)
 ```
 
 ### Options
 The whole `options` parameter (well) if optional.
  * `font` - Used font name or font family. Default is `sans-serif`.
+ * `minFontSize` - Min font size for text. Default is `30`.
+ * `maxFontSize` - Max font size for text. Default is `100`.
+ * `rect` - Area for text. Default is `{ x: 0, y: 0, width: ctx.canvas.width, height: ctx.canvas.height }`.
+ * `stroke` - If true, `strokeText()` wil be used instead of `fillText()`. Default is `false`.
+ * `lineHeight` - Multiplicator for line height. Default is `1.1`. * 
+ * `verbose` - If true, greenlock-express will log (see below) the server bootstrap.
+ * `logFunction` - Custom function for logging, with signature `logFunction(message)`. Default is `console.log`.
+
