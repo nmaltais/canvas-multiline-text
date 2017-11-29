@@ -1,4 +1,4 @@
-# words-array
+# canvas-multiline-text
 
 Draws a text in a rectangle on a canvas, on multiple lines.
 
@@ -6,6 +6,7 @@ Initialy developed for [ISBOBackend](https://gitlab.com/davideblasutto/ISBOBacke
 
 ## Usage
 This module exports a single function that draws a text on a canvas' 2d context, breaking it in multiple lines if necessary.
+
 The function also returns the used font size for drawing text.
 
 ```javascript
@@ -44,7 +45,6 @@ The whole `options` parameter (well) if optional.
  * `maxFontSize` - Max font size for text. Default is `100`.
  * `rect` - Area for text. Default is `{ x: 0, y: 0, width: ctx.canvas.width, height: ctx.canvas.height }`.
  * `stroke` - If true, `strokeText()` wil be used instead of `fillText()`. Default is `false`.
- * `lineHeight` - Multiplicator for line height. Default is `1.1`. * 
+ * `lineHeight` - Multiplicator for line height. Default is `1.1`. *
  * `verbose` - If true, greenlock-express will log (see below) the server bootstrap.
  * `logFunction` - Custom function for logging, with signature `logFunction(message)`. Default is `console.log`.
-
